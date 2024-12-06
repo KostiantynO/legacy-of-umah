@@ -21,7 +21,8 @@
     "**/*.ts",
     "**/*.tsx",
     "tailwind.config.ts",
-    "postcss.config.js"
+    "postcss.config.js",
+    "eslint.config.js"
   ],
   "exclude": ["node_modules"]
 }
