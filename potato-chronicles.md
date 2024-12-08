@@ -37,3 +37,13 @@
 - [ ] Images inspired by the scenes and characters, saved in a repo
 - [ ] Sharing the story through a creative, open-source approach - make a blog
 - [ ] Middle daughter learning 'fire kiss' from the Dragoness
+
+## Code
+
+- [ ] chore: add prettier
+- [ ] refactor: remove default exports
+- [ ] refactor: pages to app router. Upgrade step by step, line by line, verify
+      that it works in small update chucks, instead of a one big rewrite with
+      million issues unrealistic to debug.
+- [ ] feat: add readaloud clientside. With `lang selection dropdown`, hidden
+      until `readaloud lang button` (lang burger) is clicked
