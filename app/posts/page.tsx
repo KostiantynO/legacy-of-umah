@@ -1,16 +1,18 @@
-import type { InferGetStaticPropsType } from "next";
-import Link from "next/link";
-import Container from "../../components/container";
-import distanceToNow from "../../lib/dateRelative";
-import { getAllPosts } from "../../lib/getPost";
+import Link from 'next/link';
 
-export default function NotePage({
+import Container from '../../components/container';
+import distanceToNow from '../../lib/dateRelative';
+import { getAllPosts } from '../../lib/getPost';
+
+import type { InferGetStaticPropsType } from 'next';
+
+export const NotePage = ({
   allPosts,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+}: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <Container>
       {allPosts.length ? (
-        allPosts.map((post) => (
+        allPosts.map(post => (
           <article key={post.slug} className="mb-10">
             <Link
               as={`/posts/${post.slug}`}
@@ -30,12 +32,12 @@ export default function NotePage({
       )}
     </Container>
   );
-}
+};
 
-export async function getStaticProps() {
-  const allPosts = getAllPosts(["slug", "title", "excerpt", "date"]);
+export const getStaticProps = async () => {
+  const allPosts = await getAllPosts(['slug', 'title', 'excerpt', 'date']);
 
   return {
     props: { allPosts },
   };
-}
+};

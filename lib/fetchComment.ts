@@ -1,16 +1,25 @@
-import type { NextApiRequest, NextApiResponse } from "next";
-import type { Comment } from "../interfaces";
-import redis from "./redis";
-import clearUrl from "./clearUrl";
+import { clearUrl } from './clearUrl';
+import redis from './redis';
 
-export default async function fetchComment(
+import type { Comment } from '../interfaces';
+import type { NextApiRequest, NextApiResponse } from 'next';
+
+export const fetchComment = async (
   req: NextApiRequest,
-  res: NextApiResponse,
-) {
-  const url = clearUrl(req.headers.referer);
+  res: NextApiResponse
+) => {
+  const { referer } = req.headers;
+
+  if (!referer) {
+    res.status(500).json({ message: 'No referer.' });
+    return;
+  }
+
+  const url = clearUrl(referer);
 
   if (!redis) {
-    return res.status(500).json({ message: "Failed to connect to redis." });
+    res.status(500).json({ message: 'Failed to connect to redis.' });
+    return;
   }
 
   try {
@@ -18,14 +27,16 @@ export default async function fetchComment(
     const rawComments = await redis.lrange(url, 0, -1);
 
     // string data to object
-    const comments = rawComments.map((c) => {
+    const comments = rawComments.map(c => {
       const comment: Comment = JSON.parse(c);
       delete comment.user.email;
       return comment;
     });
 
-    return res.status(200).json(comments);
+    res.status(200).json(comments);
+    return;
   } catch (_) {
-    return res.status(400).json({ message: "Unexpected error occurred." });
+    res.status(400).json({ message: 'Unexpected error occurred.' });
+    return;
   }
-}
+};

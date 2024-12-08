@@ -11,3 +11,9 @@
 | `docs`     | Documentation updates.                                     | `docs: add usage examples to README`                |
 | `build`    | Changes to build scripts or CI/CD configurations.          | `build: update Dockerfile to use new base image`    |
 | `test`     | Adding or updating tests.                                  | `test: add unit tests for user validation function` |
+
+```ts
+// --- my-file.ts ---
+const message = 'Hello, Nosgoth!';
+console.log(message);
+```
