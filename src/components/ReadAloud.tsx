@@ -1,5 +1,7 @@
 'use client';
 
+import { useState } from 'react';
+
 import { useReadAloud } from '@/hooks/useReadAloud';
 
 import type { ChangeEvent } from 'react';
@@ -14,13 +16,20 @@ export const VoiceOption = ({
   name: string;
   lang: string;
   isDefault: boolean;
-}) =>
-  `<option value="${id}">${name} (${lang}) ${
-    isDefault ? '(default)' : ''
-  }</option>`;
+}) => (
+  <option value={id}>
+    {name} ({lang}) {isDefault ? '(default)' : ''}
+  </option>
+);
 
 export const ReadAloud = ({ content }: { content: string }) => {
   const { voices, setSelectedVoice, onPlayToggle } = useReadAloud(content);
+
+  const [showSelectVoice, setShowSelectVoice] = useState(false);
+
+  const onClickToggleVoiceSelector = () => {
+    setShowSelectVoice(prev => !prev);
+  };
 
   const voicesList = voices.map((voice, id) => (
     <VoiceOption
@@ -36,17 +45,35 @@ export const ReadAloud = ({ content }: { content: string }) => {
     setSelectedVoice(Number(e.target.value));
   };
 
-  const playPauseLabel = speechSynthesis.speaking ? '⏸ pause' : '▶ play';
+  const showVoices = showSelectVoice ? (
+    <label onChange={onClickToggleVoiceSelector}>
+      Select Voice:
+      <select onChange={onSelect}>{voicesList}</select>
+    </label>
+  ) : (
+    <button
+      className="h-8 w-12 rounded-lg border border-red-200"
+      onClick={onClickToggleVoiceSelector}
+      title="Select ReadAloud Language"
+    >
+      ≡
+    </button>
+  );
+
+  const playPauseLabel = speechSynthesis.speaking ? '⏸' : '▶';
 
   return (
     <div className="bg-neutral-800 text-zinc-100">
-      <label>
-        Select Voice:
-        <select onChange={onSelect}>{voicesList}</select>
-      </label>
-
       <div>
-        <button onClick={onPlayToggle}>{playPauseLabel}</button>
+        <button
+          className="h-8 w-12 rounded-lg border border-red-200"
+          onClick={onPlayToggle}
+          title="Read Aloud"
+        >
+          {playPauseLabel}
+        </button>
+
+        {showVoices}
       </div>
     </div>
   );
