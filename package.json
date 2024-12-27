@@ -8,8 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "tsc --noEmit && eslint \"src/**/*.{ts,tsx}\" --cache",
-    "format": "prettier --cache src/**/*.{ts,tsx} --write --cache",
-    "tree": "pnpm tsc --target ESNext --module ESNext --esModuleInterop --allowJs --skipLibCheck --downlevelIteration ./src/structure/structure.ts && node ./src/structure/structure.js"
+    "format": "prettier --cache src/**/*.{ts,tsx} --write --cache"
   },
   "packageManager": "pnpm@9.15.0",
   "engines": {
