@@ -4,6 +4,7 @@ declare module '@eslint/eslintrc' {
   export class FlatCompat {
     constructor(options: { baseDirectory: string });
     extends(...configs: string[]): Linter.Config[];
+    plugins(...configs: string[]): Linter.Config[];
     config(config: Linter.Config): Linter.Config[];
   }
 }

@@ -18,6 +18,8 @@ const eslintConfig = [
     'plugin:@typescript-eslint/stylistic-type-checked'
   ),
 
+  ...compat.plugins('prefer-arrow-functions'),
+
   ...compat.config({
     // @ts-expect-error parser is a string for old eslintrc-style
     parser: '@typescript-eslint/parser',
@@ -35,6 +37,8 @@ const eslintConfig = [
 
       // personal
       'linebreak-style': ['error', 'unix'],
+      "prefer-arrow-functions/prefer-arrow-functions": ["error", { "allowNamedFunctions": false, "classPropertiesAllowed": false, "disallowPrototype": false, "returnStyle": "unchanged", "singleReturnOnly": false }],
+      'prefer-arrow-callback': ["error", { allowUnboundThis: false }],
       'no-shadow': 'error',
       'no-restricted-imports': 'error',
       'no-param-reassign': 'error',
