@@ -9,34 +9,34 @@ export const useReadAloud = (blogText: string) => {
 
   useEffect(() => {
     const populateVoiceList = () => {
-      const voicesList = speechSynthesis.getVoices();
+      const voicesList = window.speechSynthesis.getVoices();
       setVoices(voicesList);
     };
 
     populateVoiceList();
-    speechSynthesis.onvoiceschanged = populateVoiceList;
+    window.speechSynthesis.onvoiceschanged = populateVoiceList;
   }, []);
 
   const startReading = (text: string, startIndex = 0) => {
     const utterance = new SpeechSynthesisUtterance(text.slice(startIndex));
-    utterance.voice = speechSynthesis.getVoices()[selectedVoice];
+    utterance.voice = window.speechSynthesis.getVoices()[selectedVoice];
     utterance.onend = () => {
       console.log('Reading complete');
     };
-    speechSynthesis.speak(utterance);
+    window.speechSynthesis.speak(utterance);
   };
 
   const onPlayToggle = () => {
     // if it is playing, stop it.
-    if (speechSynthesis.speaking) {
-      speechSynthesis.pause();
+    if (window.speechSynthesis.speaking) {
+      window.speechSynthesis.pause();
       return;
     }
 
     // if it is not playing, and has selection, start playing the selected text.
     const selectedText = window.getSelection()?.toString();
     if (selectedText && currentText === selectedText) {
-      speechSynthesis.resume();
+      window.speechSynthesis.resume();
       return;
     }
 

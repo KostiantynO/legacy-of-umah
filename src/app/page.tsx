@@ -1,12 +1,10 @@
-import { ReadAloud } from '@/components/ReadAloud';
+import { PagesList } from '@/components/PagesList';
 
 const HomePage = () => {
-  const content = 'Hello World';
-
   return (
     <div className="font-[family-name:var(--font-geist-sans)]">
       <main className="">
-        <ReadAloud content={content} />
+        <PagesList />
       </main>
       <footer className="">footer</footer>
     </div>
