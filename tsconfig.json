@@ -39,10 +39,11 @@
     "prettier.config.mjs",
     "eslint.config.mjs",
     "tailwind.config.ts",
-    "postcss.config.mjs"
-
+    "postcss.config.mjs",
     // "remark-html.d.ts",
     // "importMeta.d.ts",
+
+    "workers.mjs"
   ],
   "exclude": ["node_modules"]
 }

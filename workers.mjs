@@ -1,9 +1,8 @@
-// threads.mjs
 import {
-  Worker,
   isMainThread,
-  workerData,
   parentPort,
+  Worker,
+  workerData,
 } from 'node:worker_threads';
 
 if (isMainThread) {
@@ -11,10 +10,13 @@ if (isMainThread) {
   console.log(import.meta);
 
   const worker = new Worker(import.meta.filename, { workerData: data });
-  worker.on('message', msg => console.log(msg));
+
+  worker.on('message', console.log);
 } else {
-  const source = workerData;
-  parentPort.postMessage(source);
+  if (typeof workerData === 'string' && parentPort) {
+    const source = workerData;
+    parentPort.postMessage(source);
+  }
 }
 
 // run with `node threads.mjs`
