@@ -2,6 +2,9 @@ import './globals.css';
 
 import { Geist, Geist_Mono as Mono } from 'next/font/google';
 
+import { Footer } from '@/components/Footer';
+import { Header } from '@/components/Header';
+
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 
@@ -17,7 +20,9 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
     <html lang="en">
       <body className={`${sans.variable} ${mono.variable} antialiased`}>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
