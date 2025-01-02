@@ -1,3 +1,4 @@
+// eslint.config.mjs
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -29,6 +30,7 @@ const eslintConfig = [
     },
     // prettier-ignore
     rules: {
+      'react/no-unescaped-entities': 'off',
       '@typescript-eslint/consistent-type-definitions': ['warn', 'interface'],
       '@typescript-eslint/consistent-type-assertions': ['error', { assertionStyle: 'never' }],
       '@typescript-eslint/consistent-type-imports': ['warn', { prefer: 'type-imports', fixStyle: 'separate-type-imports', }],

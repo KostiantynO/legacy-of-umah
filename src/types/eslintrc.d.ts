@@ -1,3 +1,4 @@
+// src\types\eslintrc.d.ts
 declare module '@eslint/eslintrc' {
   import type { Linter } from 'eslint';
 

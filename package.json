@@ -8,16 +8,21 @@
     "build": "next build",
     "start": "next start",
     "lint": "tsc --noEmit && eslint \"src/**/*.{ts,tsx}\" --cache",
-    "format": "prettier --cache src/**/*.{ts,tsx} --write --cache"
+    "format": "prettier --cache src/**/*.{ts,tsx} --write --cache",
+    "workers": "tsc --pretty --strict -t esnext -m esnext --skipLibCheck --lib esnext workers.ts && node workers.js && rm workers.js"
   },
   "packageManager": "pnpm@9.15.0",
   "engines": {
     "node": "22"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
+    "gray-matter": "^4.0.3",
     "next": "15.1.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^2.6.0",
+    "zod": "^3.24.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

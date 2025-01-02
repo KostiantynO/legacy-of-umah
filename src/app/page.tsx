@@ -1,13 +1,14 @@
-import { PagesList } from '@/components/PagesList';
+// src\app\page.tsx
+import { Container } from '@/components/Container';
+import { PreviewList } from '@/components/PreviewList/PreviewList';
 
 const HomePage = () => {
   return (
-    <div className="font-[family-name:var(--font-geist-sans)]">
-      <main className="">
-        <PagesList />
-      </main>
-      <footer className="">footer</footer>
-    </div>
+    <main className="h-full font-[family-name:var(--font-geist-sans)]">
+      <Container>
+        <PreviewList />
+      </Container>
+    </main>
   );
 };
 

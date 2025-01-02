@@ -1,23 +1,19 @@
-import Link from 'next/link';
+// src\components\Nav.tsx
+import { LinkItem } from './Nav/LinkItem';
 
-export interface NavLink {
-  href: string;
-  text: string;
-}
+import type { NavLink } from '@/types/pages';
 
 const links: NavLink[] = [
-  { href: '/', text: 'About' },
-  { href: '/posts', text: 'Posts' },
+  { href: '/', text: 'Home' },
+  // { href: '/posts', text: 'Posts' },
 ];
 
-const LinkItem = ({ href, text }: NavLink) => (
-  <li>
-    <Link href={href}>{text}</Link>
-  </li>
-);
-
 export const Nav = () => {
-  const linksList = links.map(LinkItem);
+  const linksList = links.map(({ href, text }) => (
+    <LinkItem key={href} href={href}>
+      {text}
+    </LinkItem>
+  ));
 
   return (
     <nav>

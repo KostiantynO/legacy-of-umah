@@ -43,7 +43,7 @@
     // "remark-html.d.ts",
     // "importMeta.d.ts",
 
-    "workers.mjs"
+    "workers.ts"
   ],
   "exclude": ["node_modules"]
 }

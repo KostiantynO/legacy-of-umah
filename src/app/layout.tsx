@@ -1,3 +1,4 @@
+// src\app\layout.tsx
 import './globals.css';
 
 import { Geist, Geist_Mono as Mono } from 'next/font/google';
@@ -18,8 +19,10 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
-    <html lang="en">
-      <body className={`${sans.variable} ${mono.variable} antialiased`}>
+    <html lang="en" className="dark h-full">
+      <body
+        className={`h-full bg-gray-900 text-gray-100 antialiased ${sans.variable} ${mono.variable} bg-[url('/bg.jpg')]`}
+      >
         <Header />
         {children}
         <Footer />
