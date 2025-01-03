@@ -14,4 +14,6 @@ ea -D prettier prettier-plugin-tailwindcss
 ea -D eslint-plugin-prefer-arrow-functions
 ea gray-matter zod
 ea clsx tailwind-merge
+ea remark remark-html
+ea -D vfile
 ```
