@@ -1,10 +1,17 @@
 // src\app\lore\[slug]\mdToHTML.ts
-import { remark } from 'remark';
-import html from 'remark-html';
+import rehypeRaw from 'rehype-raw';
+import rehypeStringify from 'rehype-stringify';
+import remarkParse from 'remark-parse';
+import remarkRehype from 'remark-rehype';
+import { unified } from 'unified';
 
-import type { VFileCompatible } from 'vfile';
-
-const HTMLProcessor = remark().use(html);
-
-export const mdToHtml = async (markdown: VFileCompatible) =>
-  (await HTMLProcessor.process(markdown)).toString();
+export const mdToHtml = async (markdown: string): Promise<string> => {
+  return (
+    await unified()
+      .use(remarkParse)
+      .use(remarkRehype, { allowDangerousHtml: true })
+      .use(rehypeRaw)
+      .use(rehypeStringify)
+      .process(markdown)
+  ).toString();
+};
