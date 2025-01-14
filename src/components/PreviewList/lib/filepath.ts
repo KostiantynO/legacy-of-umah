@@ -2,7 +2,7 @@
 import { readFile } from 'fs/promises';
 import { join } from 'path';
 
-export const loreDir = join(process.cwd(), 'src', 'lore');
+export const loreDir = join(process.cwd(), 'lore');
 
 export const makeFullPath = (slug: string) => join(loreDir, `${slug}.md`);
 

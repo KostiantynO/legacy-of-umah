@@ -1,10 +1,7 @@
 // src\components\PreviewList\lib\getSlugs.ts
 import { readdir } from 'fs/promises';
-import { join } from 'path';
 
-import { stripExtension } from './filepath';
-
-export const loreDir = join(process.cwd(), 'src', 'lore');
+import { loreDir, stripExtension } from './filepath';
 
 export const getSlugs = async (): Promise<string[]> => {
   try {

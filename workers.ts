@@ -10,7 +10,7 @@ import {
 } from 'node:worker_threads';
 
 const cpuCount = cpus().length;
-const loreDir = join(import.meta.dirname, 'src', 'lore');
+const loreDir = join(import.meta.dirname, 'lore');
 
 const tokenize = (str: string): (string | number | undefined)[] =>
   str
