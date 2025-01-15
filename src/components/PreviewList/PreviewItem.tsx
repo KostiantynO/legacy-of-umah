@@ -11,7 +11,6 @@ export const PreviewItem = ({ slug, title }: PagePreview) => {
           <h2 className="text-nowrap">{title}</h2>
         </Link>
       </div>
-      <div className="flex gap-4 text-sm text-gray-400"></div>
     </li>
   );
 };

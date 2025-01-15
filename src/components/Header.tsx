@@ -1,12 +1,12 @@
 // src\components\Header.tsx
 import { Container } from './Container';
-import { Nav } from './Nav';
+import { Nav } from './Nav/Nav';
 
-export const Header = () => {
+export const Header = ({ prev }: { prev: string | null }) => {
   return (
-    <header className="h-16">
+    <header>
       <Container>
-        <Nav />
+        <Nav prev={prev} />
       </Container>
     </header>
   );

@@ -10,7 +10,7 @@ export const PreviewList = async () => {
   const firstFourPages = previews.slice(0, 4);
 
   const previewList = (
-    <ul className="grid grid-cols-1 justify-items-center gap-4">
+    <ul className="prose prose-h2:m-0 mx-auto grid grid-cols-1 justify-items-center gap-4">
       {firstFourPages.map(page => (
         <PreviewItem key={page.slug} {...page} />
       ))}
