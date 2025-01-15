@@ -7,10 +7,10 @@ createdAt: 2025-01-02
 updatedAt: 2025-01-02
 ---
 
-<h1 class="text-center text-green-600">Chapter Two: The Unification<br/>
+<h1>Chapter Two: The Unification<br/>
    "Hylden knowledge"</h1>
 
-<div><br/><img src="/breaker.gif" width="450" height="47" class="mx-auto"><br/></div>
+<img src="/breaker.webp" width="450" height="47">
 
 The world had been forever changed by the unholy union between vampires and
 Hylden. What began as a desperate attempt to survive turned into something far
@@ -28,7 +28,7 @@ understand, to teach, and to heal. With her guidance, the Hylden began to
 evolve—not just in their magical prowess, but in their understanding of the
 world and their place in it.
 
-<div><br/><img src="/breaker-sm.gif" width="180" height="12" class="mx-auto"><br/></div>
+<img src="/breaker-sm.gif" width="180" height="12">
 
 The Seer “I’ve seen the future of your people,” the Seer said to the Hylden
 Lord, her voice steady, yet filled with compassion. “You can be more than
@@ -55,7 +55,7 @@ inner workings of all living things, honed by centuries of experimentation, now
 found purpose in curing disease, healing injuries, and teaching the next
 generation.
 
-<div><br/><img src="/breaker-sm.gif" width="180" height="12" class="mx-auto"><br/></div>
+<img src="/breaker-sm.gif" width="180" height="12">
 
 Janos Audron “I never thought I’d see the day,” Janos Audron muttered to
 himself, watching the Hylden in the medical hall. “But I must admit, their
@@ -68,7 +68,7 @@ hands, that same dispassion became the hallmark of scientific brilliance. The
 Hylden didn’t just heal; they understood the body, the soul, and the mind in
 ways no one had before.
 
-<div><br/><img src="/breaker-sm.gif" width="180" height="12" class="mx-auto"><br/></div>
+<img src="/breaker-sm.gif" width="180" height="12">
 
 Umah “They are... changing,” Umah observed, her voice tinged with both curiosity
 and caution. “Perhaps there is hope for them yet.”
@@ -81,7 +81,7 @@ of diplomacy. In this new world, the Hylden were no longer the feared
 invaders—they were the mentors, the guides, the ones who helped others unlock
 their potential.
 
-<div><br/><img src="/breaker-sm.gif" width="180" height="12" class="mx-auto"><br/></div>
+<img src="/breaker-sm.gif" width="180" height="12">
 
 Hylden Scholar “I’ve seen what we once were,” a Hylden scholar said to a class
 of young vampires. “We were arrogant, prideful. But now we see that strength is
@@ -96,11 +96,3 @@ As the Hylden walked the halls of their universities, as they healed the sick,
 as they taught the young, they found themselves no longer the arrogant
 conquerors of old. They had become something greater—something more enduring.
 They had become the teachers, the healers, and the mentors of a new age.
-
-<div class="text-center">
-  <br/>
-  <a href="/lore/page-3" class="text-green-600">
-    <img src="/door.gif" height="150" width="159" class="mx-auto"><br/>
-    Continue...
-  </a>
-</div>

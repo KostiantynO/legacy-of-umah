@@ -6,18 +6,18 @@ createdAt: 2025-01-02
 updatedAt: 2025-01-02
 ---
 
-<h1 class="text-center text-green-600 text-lg">Chapter Three: The New Path<br/>
-   "The Seer"</h1>
+<h1>Chapter Three: The New Path<br/>
+   "Vision of The Seer"</h1>
 
-<div><br/><img src="/breaker.gif" width="450" height="47" class="mx-auto"><br/></div>
+<img src="/breaker.webp" width="450" height="47">
 
-<div class="prose">The world was changing, and so were its inhabitants. What had once been a land
+The world was changing, and so were its inhabitants. What had once been a land
 divided by bloodshed and bitter rivalry was slowly transforming into a place
 where cooperation, compassion, and emotional growth were becoming the foundation
 of a new era. And at the center of this transformation stood the Seer, whose
-vision transcended the limits of what any of her kind had thought possible.</div>
+vision transcended the limits of what any of her kind had thought possible.
 
-<div><br/><img src="/breaker-sm.gif" width="180" height="12" class="mx-auto"><br/></div>
+<img src="/breaker-sm.gif" width="180" height="12">
 
 The Seer “The future is not one of blood and domination,” the Seer said, her
 gaze faraway as she looked out over the vast fields where once only war had
@@ -37,7 +37,7 @@ Their bodies, honed by millennia of battle and survival, were now the
 instruments of teaching, demonstrating what it meant to truly master
 physicality.
 
-<div><br/><img src="/breaker-sm.gif" width="180" height="12" class="mx-auto"><br/></div>
+<img src="/breaker-sm.gif" width="180" height="12">
 
 Hylden Warrior “I may have broken bones on the battlefield,” a Hylden warrior
 said, his voice calm but full of experience. “But the true art is not in
@@ -57,7 +57,7 @@ speed, how to fight with the grace of a predator, how to be unyielding in the
 face of challenges. They had honed their bodies for centuries, and now, they
 channeled that knowledge into the next generation of athletes.
 
-<div><br/><img src="/breaker-sm.gif" width="180" height="12" class="mx-auto"><br/></div>
+<img src="/breaker-sm.gif" width="180" height="12">
 
 Hylden Warrior Coach “Power is not simply the ability to crush your opponent,”
 the warrior coach told his students. “It is knowing when to strike, when to hold
@@ -72,7 +72,7 @@ the rigorous training, the warriors taught their students not only to be
 stronger but to be more emotionally resilient. The battlefield of the mind was
 just as important as the one in the gym or on the field.
 
-<div><br/><img src="/breaker-sm.gif" width="180" height="12" class="mx-auto"><br/></div>
+<img src="/breaker-sm.gif" width="180" height="12">
 
 Janos Audron “Perhaps I underestimated them,” Janos Audron mused, watching the
 Hylden warriors as they guided the next generation of fighters. “Their power is
@@ -85,7 +85,7 @@ destroy, but by the ability to create, to protect, and to build. They learned
 the importance of cooperation, of working together to achieve greatness, not
 just as individuals but as a team.
 
-<div><br/><img src="/breaker-sm.gif" width="180" height="12" class="mx-auto"><br/></div>
+<img src="/breaker-sm.gif" width="180" height="12">
 
 Umah “They have become the masters of the new era,” Umah said, her voice filled
 with awe. “Their strength is no longer just for battle. It is for life, for

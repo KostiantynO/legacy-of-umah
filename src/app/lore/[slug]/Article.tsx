@@ -13,8 +13,9 @@ export const Article = async ({ slug }: { slug: string }) => {
   const markdown = await mdToHtml(content || '');
 
   return (
-    <article className="flex flex-col gap-10">
-      <div className="prose" dangerouslySetInnerHTML={{ __html: markdown }} />
-    </article>
+    <article
+      className="prose dark:prose-invert lg:prose-xl prose-h1:text-xl lg:prose-h1:text-2xl prose-h1:text-center prose-h1:text-green-600 prose-h1:mb-0 prose-img:my-6 prose-img:mx-auto prose-p:my-2 flex flex-col"
+      dangerouslySetInnerHTML={{ __html: markdown }}
+    />
   );
 };

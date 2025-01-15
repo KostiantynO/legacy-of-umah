@@ -15,4 +15,5 @@ ea -D eslint-plugin-prefer-arrow-functions
 ea gray-matter zod
 ea clsx tailwind-merge
 ea unified remark-parse remark-rehype rehype-raw rehype-stringify
+ea -D @tailwindcss/typography
 ```

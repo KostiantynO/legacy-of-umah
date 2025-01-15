@@ -11,7 +11,7 @@ export const Container = ({
   className?: string;
 }) => {
   return (
-    <div className={cn('container mx-auto max-w-2xl px-4 py-6', className)}>
+    <div className={cn('mx-auto max-w-screen-md px-4 py-6', className)}>
       {children}
     </div>
   );

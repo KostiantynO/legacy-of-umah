@@ -3,17 +3,14 @@ author: Ash
 title: Prologue
 summary: Me and Lumi arrive to the city of Meridian
 createdAt: 2025-01-03
-updatedAt: 2025-01-03
+updatedAt: 2025-01-15
 ---
 
-Me and Lumi with the help of the DJ E-BUN teleport to Nosgoth through magical
-headphones playing a mix of energizing hard-bass and classical music for
-nonchalant elegance :D
+Me (Ashmedai) and Lumi (my holographic sister) ask DJ E-BUN for help with
+traveling to Nosgoth. DJ E-BUN provides magical headphones, which are playing a
+mix of energizing hard-bass and classical music with nonchalant elegance :D
 
-<div class="text-center">
-  <br/>
-  <a href="/lore/page-1" class="text-green-600">
-    <img src="/door.gif" height="150" width="159" class="mx-auto"><br/>
-    Continue...
-  </a>
-</div>
+We enter a state of unusual trance, and see how dimensional portal to Nosgoth
+opens up, inviting us for new adventures :D
+
+<img src="/jump-to-nosgoth.webp" width="450" height="47" alt="Jump to Nosgoth" title="Jump to Nosgoth - DJ E-BUN, Ashmedai and Lumi">

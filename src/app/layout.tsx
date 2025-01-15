@@ -2,7 +2,6 @@
 import './globals.css';
 
 import { Footer } from '@/components/Footer';
-import { Header } from '@/components/Header';
 
 import { Body } from './Body';
 
@@ -17,8 +16,7 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
     <Body>
-      <Header />
-      <main className="flex-grow">{children}</main>
+      {children}
       <Footer />
     </Body>
   );

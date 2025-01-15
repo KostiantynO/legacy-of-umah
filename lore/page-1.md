@@ -6,10 +6,10 @@ createdAt: 2024-12-30
 updatedAt: 2025-01-02
 ---
 
-<h1 class="text-center text-green-600">Chapter One: The Whispers of Changes<br/>
+<h1>Chapter One: The Whispers of Changes<br/>
    "Welcome to New Era"</h1>
 
-<div><br/><img src="/breaker.gif" width="450" height="47" class="mx-auto"><br/></div>
+<img src="/breaker.webp" width="450" height="47">
 
 The world was once fractured, a battleground for gods and mortals, vampires and
 Hylden. In the distance, the winds whispered of something greater, something
@@ -64,11 +64,3 @@ humans would be forever blurred.
 Kain knew that the path forward would not be easy. But for the first time in his
 existence, he understood what was at stake. The world needed to evolve, or it
 would be consumed.
-
-<div class="text-center">
-  <br/>
-  <a href="/lore/page-2" class="text-green-600">
-    <img src="/door.gif" height="150" width="159" class="mx-auto"><br/>
-    Continue...
-  </a>
-</div>

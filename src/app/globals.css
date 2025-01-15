@@ -1,3 +1,4 @@
+/* src\app\globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,4 +17,8 @@
 
 nextjs-portal {
   position: absolute;
+}
+
+article.prose > img:first-of-type {
+  margin-top: 0;
 }
